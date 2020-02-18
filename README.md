@@ -1,5 +1,16 @@
 # bitcoind-integration-test-docker
 
+# Running
+```
+docker run -p 18444:18444 -p 18443:18443 --rm coinzway/bitcoind-integration-test-docker:latest
+```
+
+# Building
+
+Currently this image is build automatically on docker hub.
+
+# Building locally
+
 Build docker image:
  
 ```bash
