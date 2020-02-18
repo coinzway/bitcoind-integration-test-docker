@@ -2,7 +2,7 @@
 
 # Running
 ```
-docker run -p 18444:18444 -p 18443:18443 --rm coinzway/bitcoind-integration-test-docker:latest
+docker run -p 18443:18443 --rm coinzway/bitcoind-integration-test-docker:latest
 ```
 
 # Building

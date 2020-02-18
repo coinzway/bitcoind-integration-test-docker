@@ -7,7 +7,7 @@ export NODE_NAME="node"
 
 mkdir $NODE_NAME
 
-bitcoind -dns=0 -datadir=$NODE_NAME -rpcport=$RPC_PORT -port=$PORT -addnode=127.0.0.1:8444 -regtest=1 -printtoconsole -rpcbind=* -rpcallowip=0.0.0.0/0 -rpcpassword=password -rpcuser=user -txindex=1 -minrelaytxfee=0 &
+bitcoind -dns=0 -datadir=$NODE_NAME -rpcport=$RPC_PORT -port=$PORT -regtest=1 -printtoconsole -rpcbind=* -rpcallowip=0.0.0.0/0 -rpcpassword=password -rpcuser=user -txindex=1 -minrelaytxfee=0 &
 
 sleep 5
 
