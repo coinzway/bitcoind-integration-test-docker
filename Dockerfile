@@ -4,6 +4,6 @@ EXPOSE 18443
 EXPOSE 18444
 
 ADD init-node.sh /tmp
-RUN chmod 777 /tmp/init-node-0.sh
+RUN chmod 777 /tmp/init-node.sh
 
 CMD /tmp/init-node.sh
