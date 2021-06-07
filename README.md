@@ -15,7 +15,7 @@ Build docker image:
  
 ```bash
 BRANCH="$(git rev-parse --abbrev-ref HEAD)"
-docker build . -t coinzway/bitcoind-integration-test-docker:$BRANCH
+docker build . --platform linux/amd64 -t coinzway/bitcoind-integration-test-docker:$BRANCH
 ```
 
 Push to docker hub:
@@ -28,6 +28,6 @@ docker push coinzway/bitcoind-integration-test-docker:$BRANCH
 Both in one go:
 ```bash
 BRANCH="$(git rev-parse --abbrev-ref HEAD)"
-docker build . -t coinzway/bitcoind-integration-test-docker:$BRANCH && \
+docker build . --platform linux/amd64 -t coinzway/bitcoind-integration-test-docker:$BRANCH && \
 docker push coinzway/bitcoind-integration-test-docker:$BRANCH
 ```
