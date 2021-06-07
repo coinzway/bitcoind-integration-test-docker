@@ -15,7 +15,7 @@ do
     sleep 1
 done
 
-bitcoin-cli -rpcport=$RPC_PORT -regtest=1 -rpcpassword=password -rpcuser=user createwallet "test_wallet"
+bitcoin-cli -rpcport=$RPC_PORT -regtest=1 -rpcpassword=password -rpcuser=user createwallet ""
 
 ADDRESS=$(bitcoin-cli -rpcport=$RPC_PORT -regtest=1 -rpcpassword=password -rpcuser=user getnewaddress)
 
