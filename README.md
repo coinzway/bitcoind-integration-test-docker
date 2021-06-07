@@ -7,7 +7,7 @@ docker run -p 18443:18443 --rm coinzway/bitcoind-integration-test-docker:latest
 
 # Building
 
-Currently this image is build automatically on docker hub.
+Currently, this image is build automatically on docker hub.
 
 # Building locally
 
